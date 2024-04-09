@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Verydark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--Dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow:hidden;
+    font-family: "kumbh sans","sans-serif";
+}
+.container{
+    width: 33%;
+}
+img{
+    max-width: 100%;
+    width: 100%;
+}
+.top-image{
+    position: absolute;
+    top:-60%;
+    left: -35%;
+    z-index: -1;
+}
+.bottom-image{
+    position: absolute;
+    bottom:-90%;
+    right: -28%;
+    z-index: -1;
+}
+.container .details .pattern img{
+    border-radius: 0.9rem 0.9rem 0 0;
+}
+.container .victor img{
+    border-radius: 12rem;
+    width: 5rem;
+    position: absolute;
+    border: 5px solid white;
+    left: 50%;
+    top: 8.8rem;
+    bottom:9.4rem;
+    transform: translatex(-50%);
+}
+.container .details{
+    background: white;
+    position: relative;
+    border-radius: 0.9rem ; 
+}
+.container .bio {
+    text-align: center;
+    margin-top: 3rem;
+}
+.container .bio  h2{
+  
+    font-weight: 700;
+    color: var(--Verydark-desaturated-blue);
+}
+.container .bio h2 span{
+    margin-left: 0.5rem;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+}
+.container .bio p{
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 0.1rem;
+    margin-top: 0.2rem;
+    padding-bottom: 2rem;
+}
+.container .stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem;
+    padding: 1rem;
+   
+}
+.container hr{
+   border-color: hsl(227, 10%, 46%, 0.2);
+}
+.container .stats h2{
+    color: var(--Verydark-desaturated-blue);
+}
+.container .stats p{
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+@media  (max-width:768px){
+    body{
+        
+        padding: 1.5rem;
+
+    }
+    .container{
+        width: 100%;
+        max-width: 100%;
+    }
+    .top-image{
+       right:10rem;
+       bottom:12rem
+    }
+    .bottom-image{
+        top: 29rem;
+        left: 15rem;
+    }
+    
+}
+
